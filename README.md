@@ -1,44 +1,120 @@
-# OSLab — OS Algorithm Visualizer
+# OS Algorithm Visualizer
 
-A browser-based learning tool for interactive Operating System algorithm simulations.
+An interactive web-based application for visualizing and understanding fundamental Operating System algorithms. The project helps students explore CPU scheduling, page replacement, and disk scheduling through user inputs, execution timelines, and performance metrics.
 
-## Modules
+## Overview
 
-- **CPU Scheduling:** FCFS, non-preemptive SJF, non-preemptive Priority (lower number means higher priority), and Round Robin.
-- **Page Replacement:** FIFO, LRU, and Optimal, with page hits/faults and side-by-side comparison.
-- **Disk Scheduling:** FCFS, SSTF, SCAN, and C-SCAN, with head-movement calculations and comparison.
+Operating System algorithms can be difficult to understand through theory alone. This project provides a visual and interactive way to observe how different algorithms work, compare their behavior, and understand their results.
 
-## Run locally
+Users can enter algorithm-specific inputs, run simulations, and examine the resulting execution order and calculated metrics.
 
-Requirements: Node.js 18 or newer.
+## Features
 
-```bash
-npm install
-npm run dev
-```
+- **CPU Scheduling:** Simulate scheduling algorithms and analyze process execution.
+- **Page Replacement:** Explore how page replacement strategies manage memory references.
+- **Disk Scheduling:** Visualize disk request servicing and scheduling order.
+- **Interactive Inputs:** Provide process details and other algorithm-specific parameters.
+- **Execution Timeline:** Observe the order in which processes or requests are handled.
+- **Performance Metrics:** View relevant calculated values, such as waiting time, turnaround time, and makespan where applicable.
+- **Visual Learning:** Understand algorithm behavior through an interactive dashboard.
 
-Open the local URL printed by Vite.
+## Algorithms
 
-## Build
+### 1. CPU Scheduling
 
-```bash
-npm run build
-npm run preview
-```
+- First Come, First Served (FCFS)
+- Shortest Job First (SJF)
+- Round Robin (RR)
+- Priority Scheduling
 
-## Deploy to Vercel
+### 2. Page Replacement
 
-1. Push this folder to a GitHub repository.
-2. Import the repository in Vercel.
-3. Framework preset: Vite.
-4. Build command: `npm run build`.
-5. Output directory: `dist`.
+- First In, First Out (FIFO)
+- Least Recently Used (LRU)
+- Optimal Page Replacement
 
-The project uses client-side JavaScript and does not require a database or API keys.
+### 3. Disk Scheduling
 
-## Conventions
+- First Come, First Served (FCFS)
+- Shortest Seek Time First (SSTF)
+- SCAN
 
-- CPU Priority Scheduling is non-preemptive; a smaller numeric value represents higher priority.
-- Round Robin uses a configurable positive integer time quantum.
-- Disk cylinders range from 0 to the configured maximum. SCAN/C-SCAN include sweep boundary movement where applicable.
-- Simulation data is processed in the browser and is not persisted.
+*Note: Verify that every listed algorithm is implemented and working in the current version before publishing this README.*
+
+## Tech Stack
+
+- **Frontend:** React
+- **Language:** JavaScript (JSX)
+- **Development Tools:** Node.js, npm, Visual Studio Code
+- **Version Control:** Git and GitHub
+- **Deployment:** Vercel (planned)
+
+## Getting Started
+
+### Prerequisites
+
+Install the following tools before running the project:
+
+- [Node.js](https://nodejs.org/)
+- npm, which is included with Node.js
+- [Git](https://git-scm.com/) (optional for cloning and version control)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <YOUR_GITHUB_REPOSITORY_URL>
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd <YOUR_PROJECT_FOLDER>
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in the terminal in your web browser.
+
+## How to Use
+
+1. Open the application in your browser.
+2. Select the required category and algorithm.
+3. Enter the required inputs, such as arrival time, burst time, priority, time quantum, page reference string, or disk requests, as applicable.
+4. Run the simulation.
+5. Observe the execution timeline and calculated results.
+6. Compare the behavior of different algorithms using suitable input examples.
+
+## Project Goals
+
+- Improve understanding of Operating System concepts through visualization.
+- Demonstrate the behavior of commonly used OS algorithms.
+- Help students verify scheduling and resource-management calculations.
+- Provide an interactive learning tool for academic practice and demonstrations.
+
+## Future Enhancements
+
+- Add more Operating System algorithms.
+- Improve visual comparisons between algorithms.
+- Add step-by-step simulation controls.
+- Enhance responsiveness and accessibility.
+- Deploy the application for public access.
+
+## Contributors
+
+Developed as an academic project focused on Operating Systems and interactive algorithm visualization.
+
+## License
+
+No license has been specified yet. Add a license if you intend to permit others to reuse, modify, or distribute the project.
