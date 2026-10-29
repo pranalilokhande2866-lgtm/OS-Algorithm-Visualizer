@@ -18,6 +18,12 @@ Users can enter algorithm-specific inputs, run simulations, and examine the resu
 - **Performance Metrics:** View relevant calculated values, such as waiting time, turnaround time, and makespan where applicable.
 - **Visual Learning:** Understand algorithm behavior through an interactive dashboard.
 
+## Live Demo
+
+**Try the OS Algorithm Visualizer here:** [Open Live Website](https://os-algorithm-visualizer-six.vercel.app)
+
+Explore interactive Operating System algorithms for CPU scheduling, page replacement, and disk scheduling.
+
 ## Algorithms
 
 ### 1. CPU Scheduling
